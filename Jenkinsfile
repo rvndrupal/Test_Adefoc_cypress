@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Cypress Parallel Test Suite') {
+            parallel {
+                stage('Slave 1') {
+                    agent {
+                        label "Agent1_1"
+                    }
+                    steps {
+                        git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
+                        bat 'npm install'
+                        bat 'npm update'                       
+                        bat 'npx cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --spec "cypress/integration/sinamope/sina.js --parallel'
+                    
+                    }
+                }
+                stage('Slave 2') {
+                    agent {
+                        label "Agent1_2"
+                    }
+                    steps {
+                        git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
+                        bat 'npm install'
+                        bat 'npm update'                       
+                        bat 'npx cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --spec "cypress/integration/sinamope/sina.js --parallel'
+
+
+                    }
+                }
+
+               
+                  
+            }
+
+             
+        }
+
+    }
+            
+}

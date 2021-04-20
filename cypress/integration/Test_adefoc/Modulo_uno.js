@@ -10,8 +10,8 @@ require('cypress-plugin-tab')
 describe('Proyecto Adefoc Modulo uno', () =>{ 
 
     const master= new test_PO()
-    let numero_animales=3
-    let numero_pruebas=2
+    let numero_animales=4
+    let numero_pruebas=1
 
     //master.visitHome(500)
     
@@ -40,7 +40,7 @@ describe('Proyecto Adefoc Modulo uno', () =>{
         
     })
 
-    it.only('Tuberculosis', () =>{
+    it('Tuberculosis', () =>{
       
         master.Tuberculosis(600,numero_animales,numero_pruebas)
         
