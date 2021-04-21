@@ -32,6 +32,7 @@ pipeline {
                                               
                     }
                 }
+                /*
 
                 stage('Slave 3') {
                     agent {
@@ -60,7 +61,7 @@ pipeline {
                     }
                 }
 
-                /*
+                
 
                 stage('Slave 5') {
                     agent {
