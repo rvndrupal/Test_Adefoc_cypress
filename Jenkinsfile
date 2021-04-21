@@ -8,7 +8,7 @@ pipeline {
             parallel {
                 stage('Slave 1') {
                     agent {
-                        label "node1"
+                        label "remote_node_1"
                     }
                     steps {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
