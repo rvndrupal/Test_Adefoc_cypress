@@ -2,8 +2,8 @@
   "viewportWidth": 1400,
   "viewportHeight": 900,
   "chromeWebSecurity": false,
-  "defaultCommandTimeout": 20000,
-  "pageLoadTimeout": 20000,
+  "defaultCommandTimeout": 40000,
+  "pageLoadTimeout": 40000,
   "folio": "",
   "projectId": "n176nz"
 }
