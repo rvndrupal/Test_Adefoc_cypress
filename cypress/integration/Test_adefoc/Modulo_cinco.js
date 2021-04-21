@@ -11,7 +11,7 @@ describe('Proyecto Adefoc Modulo uno', () =>{
 
     const master= new test_PO()
     let numero_animales=4
-    let numero_pruebas=2
+    let numero_pruebas=1
 
     //master.visitHome(500)
     
