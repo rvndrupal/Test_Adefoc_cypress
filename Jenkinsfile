@@ -12,7 +12,10 @@ pipeline {
                         label "Agent1_1"
                     }
                     steps {
-                       echo"Uno primero"
+                        git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
+                        bat 'npm install'
+                        bat 'npm update'                       
+                        bat 'npx cypress run --record --parallel --key 3313dcb4-bec7-4652-8872-3d77817d4099  --spec "cypress/integration/Test_adefoc/Modulo_uno.js'
                     
                     }
                 }
@@ -22,7 +25,10 @@ pipeline {
                         label "Agent1_2"
                     }
                     steps {
-                       echo"Se arranca el segundo en pararlelo"
+                        git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
+                        bat 'npm install'
+                        bat 'npm update'                       
+                        bat 'npx cypress run --record --parallel --key 3313dcb4-bec7-4652-8872-3d77817d4099  --spec "cypress/integration/Test_adefoc/Modulo_uno.js'
                     
                     }
                 }
@@ -32,7 +38,10 @@ pipeline {
                         label "Agent1_3"
                     }
                     steps {
-                       echo"Se arranca el tres en pararlelo"
+                        git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
+                        bat 'npm install'
+                        bat 'npm update'                       
+                        bat 'npx cypress run --record --parallel --key 3313dcb4-bec7-4652-8872-3d77817d4099  --spec "cypress/integration/Test_adefoc/Modulo_uno.js'
                     
                     }
                 }
@@ -42,7 +51,10 @@ pipeline {
                         label "Agent1_4"
                     }
                     steps {
-                       echo"Se arranca el cuatro en pararlelo"
+                        git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
+                        bat 'npm install'
+                        bat 'npm update'                       
+                        bat 'npx cypress run --record --parallel --key 3313dcb4-bec7-4652-8872-3d77817d4099  --spec "cypress/integration/Test_adefoc/Modulo_uno.js'
                     
                     }
                 }
