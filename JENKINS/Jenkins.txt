@@ -13,11 +13,12 @@ Nota par quitar jenkins .- https://stackoverflow.com/questions/26677637/how-to-u
     .-java -jar jenkins.war uninstall
 
 4.- Download jenkins
+    .-Nota correr sin simbolos--> -Dfile.encoding=UTF8 Jenkins.war
     .-descragr el war .->https://www.jenkins.io/download/  descargar el exe
     .-Ponerlo en C:
-    .-ejecutar .- cd C:\Program Files\Jenkins
+    .-ejecutar .- cd C:\Program Files\Jenkins -Dfile.encoding=UTF8 Jenkins.war
     .-jenkins  stop
-    .-jenkins  start
+    .-jenkins  start -Dfile.encoding=UTF8 Jenkins.war
     .-jenkins restart
 
     .-Usuario-> Rodrigo
@@ -58,3 +59,19 @@ Apagar los firewalls de las dos.
 .-Configurar el git y el node de las virtuales como las imagenes
 .-Piner la configuración como se ve en la imagen.
 .-Descragr los jar en ponerlos en Agent1 y Agent2
+
+
+##############################################################################################
+Super importante mover los archivos de Cache
+
+1.- poner en el navegador de las carpetas --> %appdata% ->Enter     
+2.-te debe de mandar a Roaming
+3.-buscar la carpeta cypress y borrarla
+
+VIDEO-> 248
+
+ESTE PUNTO ES MUY IMPORTANTE PARA EL CACHE DE LA MAQUINA
+
+
+########################################################################
+
