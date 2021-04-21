@@ -7,7 +7,7 @@ require('cypress-xpath')
 require('cypress-plugin-tab')
 
 
-describe('Proyecto Adefoc Modulo uno', () =>{ 
+describe('Proyecto Adefoc Modulo tres', () =>{ 
 
     const master= new test_PO()
     let numero_animales=4
