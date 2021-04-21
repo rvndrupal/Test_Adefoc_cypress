@@ -7,7 +7,7 @@ pipeline {
 
          stage('Slave 3') {
                     agent {
-                        label "principal"
+                        label "Principal"
                     }
                     steps {
                        echo"Se arranca el principal de todos"
