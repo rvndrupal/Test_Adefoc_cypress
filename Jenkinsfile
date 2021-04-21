@@ -45,6 +45,7 @@ pipeline {
                                               
                     }
                 }
+                /*
 
                 stage('Slave 4') {
                     agent {
@@ -85,7 +86,7 @@ pipeline {
                     }
                 }
 
-                /*
+                
                 stage('Slave 7') {
                     agent {
                         label "Agent1_7"
