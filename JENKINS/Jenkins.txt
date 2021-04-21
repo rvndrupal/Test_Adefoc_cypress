@@ -18,8 +18,10 @@ Nota par quitar jenkins .- https://stackoverflow.com/questions/26677637/how-to-u
     .-Ponerlo en C:
     .-ejecutar .- cd C:\Program Files\Jenkins -Dfile.encoding=UTF8 Jenkins.war
     .-jenkins  stop
-    .-jenkins  start -Dfile.encoding=UTF8 Jenkins.war
+    .-jenkins  start -Dfile.encoding=UTF8 jenkins.war
     .-jenkins restart
+
+    .-opcional-->  java -jar -Dfile.encoding=UTF8 Jenkins.war
 
     .-Usuario-> Rodrigo
     .-Password->Rorro131319+
