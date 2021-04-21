@@ -42,7 +42,7 @@ pipeline {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
                         bat 'npm install'
                         bat 'npm update'  
-                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel --browser chrome --headed'
+                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel'
                                               
                     }
                 }
@@ -56,7 +56,7 @@ pipeline {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
                         bat 'npm install'
                         bat 'npm update'  
-                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel --browser chrome --headed'
+                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel'
                                               
                     }
                 }
@@ -71,7 +71,7 @@ pipeline {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
                         bat 'npm install'
                         bat 'npm update'  
-                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel --browser chrome --headed'
+                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel'
                                               
                     }
                 }
@@ -84,7 +84,7 @@ pipeline {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
                         bat 'npm install'
                         bat 'npm update'  
-                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel --browser chrome --headed'
+                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel'
                                               
                     }
                 }
@@ -96,7 +96,7 @@ pipeline {
                     }
                     steps {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
-                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel --browser chrome --headed'
+                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel'
                                               
                     }
                 }
@@ -107,7 +107,7 @@ pipeline {
                     }
                     steps {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
-                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel --browser chrome --headed'
+                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel'
                                               
                     }
                 }
@@ -118,7 +118,7 @@ pipeline {
                     }
                     steps {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
-                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel --browser chrome --headed'
+                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel'
                                               
                     }
                 }
@@ -129,7 +129,7 @@ pipeline {
                     }
                     steps {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
-                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel --browser chrome --headed'
+                        bat 'npx cypress run cypress run --record --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel'
                                               
                     }
                 }
