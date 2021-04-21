@@ -4,6 +4,18 @@ pipeline {
     tools {nodejs "node"}
 
     stages {
+
+         stage('Slave 3') {
+                    agent {
+                        label "principal"
+                    }
+                    steps {
+                       echo"Se arranca el principal de todos"
+                    
+                    }
+        }
+
+
         stage('Cypress Parallel Test Suite') {
             parallel {
                 stage('Slave 1') {
@@ -26,16 +38,7 @@ pipeline {
                     }
                 }
 
-                 stage('Slave 3') {
-                    agent {
-                        label "principal"
-                    }
-                    steps {
-                       echo"Se arranca el principal de todos"
-                    
-                    }
-                }
-   
+                
                   
             }
 
