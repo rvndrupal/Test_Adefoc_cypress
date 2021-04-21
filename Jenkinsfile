@@ -5,17 +5,6 @@ pipeline {
 
     stages {
 
-         stage('Slave 3') {
-                    agent {
-                        label "Principal"
-                    }
-                    steps {
-                       echo"Se arranca el principal de todos"
-                    
-                    }
-        }
-
-
         stage('Cypress Parallel Test Suite') {
             parallel {
                 stage('Slave 1') {
@@ -34,6 +23,26 @@ pipeline {
                     }
                     steps {
                        echo"Se arranca el segundo en pararlelo"
+                    
+                    }
+                }
+
+                stage('Slave 3') {
+                    agent {
+                        label "Agent1_3"
+                    }
+                    steps {
+                       echo"Se arranca el tres en pararlelo"
+                    
+                    }
+                }
+
+                stage('Slave 4') {
+                    agent {
+                        label "Agent1_4"
+                    }
+                    steps {
+                       echo"Se arranca el cuatro en pararlelo"
                     
                     }
                 }
