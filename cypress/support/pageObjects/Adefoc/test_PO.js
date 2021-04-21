@@ -293,10 +293,10 @@ class test_PO{
                 cy.get('#id_vacuna').select('1').should('have.value','1')
                 cy.wait(1200)
                 cy.get('#id_dosificacion').select('1').should('have.value','1')
-                cy.wait(1200)
+                cy.wait(1500)
                 let lab=Math.floor(Math.random() * 90000); 
                 cy.get('#id_laboratorio').should('be.visible').type('Laboratorio de prueba-' + lab)
-                cy.wait(tiempo)              
+                cy.wait(1500)              
                 cy.get('#id_lote').should('be.visible').type('Lote-'+lab)
                 cy.wait(1500)
                 let anio = fecha.getFullYear()+10;
@@ -533,7 +533,7 @@ class test_PO{
     }//final bloque Garrapaticida
 
 
-    Brucelosis(t,ani,np){
+    Dictamen_Brucelosis(t,ani,np){
         let tiempo=t
         let folios
         let animales=ani

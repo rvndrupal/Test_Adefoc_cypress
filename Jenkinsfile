@@ -32,11 +32,11 @@ pipeline {
                                               
                     }
                 }
-                /*
+                
 
                 stage('Slave 3') {
                     agent {
-                        label "Agent1_3"
+                        label "PC2_1"
                     }
                     steps {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
@@ -50,7 +50,7 @@ pipeline {
 
                 stage('Slave 4') {
                     agent {
-                        label "Agent1_4"
+                        label "PC2_2"
                     }
                     steps {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
@@ -61,7 +61,7 @@ pipeline {
                     }
                 }
 
-                
+                /*
 
                 stage('Slave 5') {
                     agent {

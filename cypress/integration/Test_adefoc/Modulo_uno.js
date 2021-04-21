@@ -18,31 +18,31 @@ describe('Proyecto Adefoc Modulo uno', () =>{
    
     it('Antirrabica', () =>{
       
-        master.Antirrabica(1200,numero_animales,numero_pruebas)
+        master.Antirrabica(1100,numero_animales,numero_pruebas)
         
     })
 
     it('Brucelosis', () =>{
       
-        master.Brucelosis(1200,numero_animales,numero_pruebas)
+        master.Brucelosis(1100,numero_animales,numero_pruebas)
         
     })
 
     it('Garrapaticida', () =>{
       
-        master.Garrapaticida(1200,numero_animales,numero_pruebas)
+        master.Garrapaticida(1100,numero_animales,numero_pruebas)
         
     })
 
-    it('Brucelosis', () =>{
+    it('Dictamen_Brucelosis', () =>{
       
-        master.Brucelosis(1200,numero_animales,numero_pruebas)
+        master.Dictamen_Brucelosis(1100,numero_animales,numero_pruebas)
         
     })
 
     it('Tuberculosis', () =>{
       
-        master.Tuberculosis(1200,numero_animales,numero_pruebas)
+        master.Tuberculosis(1100,numero_animales,numero_pruebas)
         
     })
 
