@@ -26,9 +26,8 @@ pipeline {
                     }
                     steps {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
-                        bat 'npm install'
-                        bat 'npm update'                       
-                         bat 'npx cypress run --spec "cypress/integration/Test_adefoc/Modulo_uno.js  --record  --group 2x-chrome  --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel --browser chrome --config pageLoadTimeout=1000000'
+                                              
+                        bat 'npx cypress run --spec "cypress/integration/Test_adefoc/Modulo_uno.js  --record  --group 2x-chrome  --key 3313dcb4-bec7-4652-8872-3d77817d4099  --parallel --browser chrome --config pageLoadTimeout=1000000'
                     
                     }
                 }
