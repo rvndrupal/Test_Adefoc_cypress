@@ -6,9 +6,9 @@ pipeline {
     stages {
         stage('Cypress Parallel Test Suite') {
             parallel {
-                stage('Master') {
+                stage('Slave 2') {
                     agent {
-                        label "Principal"
+                        label "Agent1_1"
                     }
                     steps {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
@@ -19,9 +19,9 @@ pipeline {
                     }
                 }
 
-                stage('Slave 1') {
+                stage('Slave 2') {
                     agent {
-                        label "Agent1_1"
+                        label "Agent1_2"
                     }
                     steps {
                         git url: 'https://github.com/rvndrupal/Test_Adefoc_cypress.git'
