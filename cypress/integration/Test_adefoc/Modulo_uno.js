@@ -10,8 +10,8 @@ require('cypress-plugin-tab')
 describe('Proyecto Adefoc Modulo uno', () =>{ 
 
     const master= new test_PO()
-    let numero_animales=4
-    let numero_pruebas=5
+    let numero_animales=2
+    let numero_pruebas=10
     let tiempo_general=1300
 
     //master.visitHome(500)
