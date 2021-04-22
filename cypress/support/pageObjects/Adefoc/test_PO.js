@@ -78,7 +78,7 @@ class test_PO{
             let fechaOk=(anio+"-"+mes+"-"+dia )
         
             cy.get('#fechaInicio').should('be.visible').type(fechaOk)
-            cy.wait(tiempo)
+            cy.wait(4000)
             cy.get('#id_numero_animales').should('be.visible').clear().type(animales)
             cy.wait(tiempo)
             cy.get('#id_datos_correctos').should('be.visible').click({force: true})
@@ -774,6 +774,8 @@ class test_PO{
                cy.get('#id_fecha_lectura').should('be.visible').type(fechaOk6)
                cy.wait(2500)
                cy.get('#id_hora_lectura').should('be.visible').type('11:30:00')
+               cy.wait(3000)
+               cy.get('#id_hora_lectura').should('be.visible').type('11:30:15')
                cy.wait(6000)
 
          
