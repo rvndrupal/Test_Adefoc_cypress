@@ -110,7 +110,7 @@ class test_PO{
                 cy.get('#id_detalle_solicitud').should('be.visible').click({force: true})
                 cy.wait(tiempo)
                 cy.get('#id_ir_registro_solicitud').should('be.visible').click({force: true})
-                cy.wait(6000)
+                cy.wait(8000)
                 cy.get('#id_tipo_vacuna').select('4').should('have.value','4')
                 cy.wait(tiempo)
                 let lab=Math.floor(Math.random() * 90000); 
@@ -772,7 +772,7 @@ class test_PO{
                let anio6 = fecha.getFullYear()+1;
                let fechaOk6=(anio6+"-"+mes+"-"+dia ) 
                cy.get('#id_fecha_lectura').should('be.visible').type(fechaOk6)
-               cy.wait(2500)
+               cy.wait(7000)
                cy.get('#id_hora_lectura').should('be.visible').type('11:30:00')
                cy.wait(3000)
                cy.get('#id_hora_lectura').should('be.visible').type('11:30:15')
