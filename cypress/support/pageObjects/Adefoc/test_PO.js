@@ -110,7 +110,7 @@ class test_PO{
                 cy.get('#id_detalle_solicitud').should('be.visible').click({force: true})
                 cy.wait(tiempo)
                 cy.get('#id_ir_registro_solicitud').should('be.visible').click({force: true})
-                cy.wait(tiempo)
+                cy.wait(6000)
                 cy.get('#id_tipo_vacuna').select('4').should('have.value','4')
                 cy.wait(tiempo)
                 let lab=Math.floor(Math.random() * 90000); 
@@ -438,6 +438,7 @@ class test_PO{
                 cy.wait(tiempo)
 
                 //Medio_transporte
+                cy.wait(6000)
                 let transporte_Arr = ["CAMIÓN", "CAMINONETA","TRAILER"];
                 let randomTransporte = transporte_Arr[Math.floor(Math.random()*transporte_Arr.length)]; 
                 cy.get('#id_medio_transporte').should('be.visible').type( randomTransporte)
@@ -773,7 +774,7 @@ class test_PO{
                cy.get('#id_fecha_lectura').should('be.visible').type(fechaOk6)
                cy.wait(2500)
                cy.get('#id_hora_lectura').should('be.visible').type('11:30:00')
-               cy.wait(2500)
+               cy.wait(6000)
 
          
 
