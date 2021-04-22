@@ -122,9 +122,9 @@ class test_PO{
                 //let anio = fecha.setFullYear(2025);
                 let fechaOk2=(anio+"-"+mes+"-"+dia )
                 cy.get('#id_fecha_caducidad').should('be.visible').type(fechaOk2)
-                cy.wait(tiempo)
-                cy.get('#id_agregar_vacuna').should('be.visible').click({force: true})
                 cy.wait(3000)
+                cy.get('#id_agregar_vacuna').should('be.visible').click({force: true})
+                cy.wait(5000)
 
                 //tabla
                 for(let x=0;x<=animales-1;x++){
@@ -441,11 +441,11 @@ class test_PO{
                 let transporte_Arr = ["CAMIÓN", "CAMINONETA","TRAILER"];
                 let randomTransporte = transporte_Arr[Math.floor(Math.random()*transporte_Arr.length)]; 
                 cy.get('#id_medio_transporte').should('be.visible').type( randomTransporte)
-                cy.wait(tiempo)
+                cy.wait(2500)
                 let marca_Arr = [ "NISSAN","FORD","KIA","HONDA","TOYOTA","FIAT",];
                 let randomMarca = marca_Arr[Math.floor(Math.random()*marca_Arr.length)];  
                 cy.get('#id_marca').should('be.visible').type(randomMarca)
-                cy.wait(tiempo)
+                cy.wait(2500)
                 let placa=Math.floor(Math.random() * 300); 
                 cy.get('#id_placas').should('be.visible').type('rtf-rfe'+placa)
                 cy.wait(3000)
@@ -771,9 +771,9 @@ class test_PO{
                let anio6 = fecha.getFullYear()+1;
                let fechaOk6=(anio6+"-"+mes+"-"+dia ) 
                cy.get('#id_fecha_lectura').should('be.visible').type(fechaOk6)
-               cy.wait(tiempo)
+               cy.wait(2500)
                cy.get('#id_hora_lectura').should('be.visible').type('11:30:00')
-               cy.wait(tiempo)
+               cy.wait(2500)
 
          
 
