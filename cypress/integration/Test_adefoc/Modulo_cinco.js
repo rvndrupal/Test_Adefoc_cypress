@@ -42,7 +42,7 @@ describe('Proyecto Adefoc Modulo cuatro', () =>{
     })
 
     it.only('Tuberculosis', () =>{
-      
+        Cypress.config('defaultCommandTimeout', 25000)
         master.Tuberculosis(tiempo_general,numero_animales,numero_pruebas)
         
     })

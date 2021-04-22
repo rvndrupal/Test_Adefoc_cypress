@@ -24,7 +24,7 @@ describe('Proyecto Adefoc Modulo dos', () =>{
     })
 
     it.only('Brucelosis', () =>{
-      
+        Cypress.config('defaultCommandTimeout', 25000)
         master.Brucelosis(tiempo_general,numero_animales,numero_pruebas)
         
     })
