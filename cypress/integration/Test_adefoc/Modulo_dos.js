@@ -11,7 +11,7 @@ describe('Proyecto Adefoc Modulo dos', () =>{
 
     const master= new test_PO()
     let numero_animales=4
-    let numero_pruebas=1
+    let numero_pruebas=5
 
     //master.visitHome(500)
     
@@ -22,9 +22,9 @@ describe('Proyecto Adefoc Modulo dos', () =>{
         
     })
 
-    it('Brucelosis', () =>{
+    it.only('Brucelosis', () =>{
       
-        master.Brucelosis(1100,numero_animales,numero_pruebas)
+        master.Brucelosis(800,numero_animales,numero_pruebas)
         
     })
 

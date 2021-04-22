@@ -7,7 +7,7 @@ require('cypress-xpath')
 require('cypress-plugin-tab')
 
 
-describe('Proyecto Adefoc Modulo tres', () =>{ 
+describe('Proyecto Adefoc Modulo cuatro', () =>{ 
 
     const master= new test_PO()
     let numero_animales=4
@@ -28,21 +28,21 @@ describe('Proyecto Adefoc Modulo tres', () =>{
         
     })
 
-    it.only('Garrapaticida', () =>{
+    it('Garrapaticida', () =>{
       
-        master.Garrapaticida(800,numero_animales,numero_pruebas)
+        master.Garrapaticida(1100,numero_animales,numero_pruebas)
         
     })
 
     it('Dictamen_Brucelosis', () =>{
       
-        master.Dictamen_Brucelosis(1100,numero_animales,numero_pruebas)
+        master.Dictamen_Brucelosis(800,numero_animales,numero_pruebas)
         
     })
 
-    it('Tuberculosis', () =>{
+    it.only('Tuberculosis', () =>{
       
-        master.Tuberculosis(1100,numero_animales,numero_pruebas)
+        master.Tuberculosis(800,numero_animales,numero_pruebas)
         
     })
 

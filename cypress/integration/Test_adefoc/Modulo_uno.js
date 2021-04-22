@@ -11,14 +11,14 @@ describe('Proyecto Adefoc Modulo uno', () =>{
 
     const master= new test_PO()
     let numero_animales=4
-    let numero_pruebas=1
+    let numero_pruebas=5
 
     //master.visitHome(500)
     
    
-    it('Antirrabica', () =>{
+    it.only('Antirrabica', () =>{
       
-        master.Antirrabica(1100,numero_animales,numero_pruebas)
+        master.Antirrabica(800,numero_animales,numero_pruebas)
         
     })
 
