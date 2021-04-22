@@ -76,7 +76,7 @@ pipeline {
                     }
                 }
 
-                /*
+                
 
                 stage('Slave 6') {
                     agent {
@@ -135,7 +135,7 @@ pipeline {
                                               
                     }
                 }
-                */
+                
 
 
 

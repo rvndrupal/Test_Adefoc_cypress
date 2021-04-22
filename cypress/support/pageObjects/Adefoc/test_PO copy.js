@@ -626,7 +626,7 @@ class test_PO{
                 cy.get('#id_tipo_solicitud_2').should('be.visible').click({force: true})
                 cy.wait(tiempo)
                 cy.get('#id_tipo_solicitud_3').should('be.visible').click({force: true})
-                cy.wait(3000)
+                cy.wait(2000)
                 let anio4 = fecha.getFullYear()+30;
                 let fechaOk4=(anio4+"-"+mes+"-"+dia )   
                 cy.get('#id_fecha_prueba').should('be.visible').type(fechaOk4)
