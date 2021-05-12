@@ -217,7 +217,7 @@ class test_PO{
             cy.title().should('eq','Frontend')
             cy.wait(tiempo)
             
-            cy.get('#username').should('be.visible').type('estela.flores')
+            cy.get('#username').should('be.visible').type('luis.jimenez')
             cy.wait(tiempo)
             cy.get('#password').should('be.visible').type('SENA2020')
             cy.wait(tiempo)
@@ -229,7 +229,7 @@ class test_PO{
             cy.wait(tiempo)
             cy.get('#id_ir_consulta_unidad').should('be.visible').click({force: true})
             cy.wait(tiempo)     
-            cy.get('#id_clave_unidad').should('be.visible').clear().type('020031118002')
+            cy.get('#id_clave_unidad').should('be.visible').clear().type('150860102002')
             cy.wait(tiempo)
             cy.get('#id_buscar_unidad').should('be.visible').click({force: true})
             cy.wait(tiempo)
