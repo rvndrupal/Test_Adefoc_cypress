@@ -36,7 +36,7 @@ describe('Proyecto Adefoc Modulo cuatro', () =>{
     })
 
     it.only('Dictamen_Brucelosis', () =>{
-        Cypress.config('defaultCommandTimeout', 25000)
+        
         master.Dictamen_Brucelosis(tiempo_general,numero_animales,numero_pruebas)
         
     })

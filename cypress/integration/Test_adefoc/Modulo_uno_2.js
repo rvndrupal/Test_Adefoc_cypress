@@ -18,7 +18,7 @@ describe('Proyecto Adefoc Modulo uno', () =>{
     
    
     it.only('Antirrabica', () =>{
-        Cypress.config('defaultCommandTimeout', 25000)
+        
         master.Antirrabica(tiempo_general,numero_animales,numero_pruebas)
         
     })

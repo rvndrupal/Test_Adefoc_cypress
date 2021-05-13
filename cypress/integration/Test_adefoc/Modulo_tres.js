@@ -30,7 +30,7 @@ describe('Proyecto Adefoc Modulo tres', () =>{
     })
 
     it.only('Garrapaticida', () =>{
-        Cypress.config('defaultCommandTimeout', 25000)
+        
         master.Garrapaticida(tiempo_general,numero_animales,numero_pruebas)
         
     })
